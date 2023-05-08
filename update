@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Step 1: Update package lists
+echo "Updating package lists..."
+
+sudo apt update
+
+# Step 2: Upgrade installed packages
+echo "Upgrading installed packages..."
+
+sudo apt upgrade -y
+
+# Step 3: Install security updates
+echo "Installing security updates..."
+
+sudo apt-get dist-upgrade -y
+
+# Step 4: Clean up
+echo "Cleaning up..."
+
+sudo apt autoremove -y
+sudo apt autoclean
+
+# Step 5: Reboot the system (optional)
+# echo "Rebooting the system..."
+# sudo reboot
+
+echo "Security updates installation completed!"
+
